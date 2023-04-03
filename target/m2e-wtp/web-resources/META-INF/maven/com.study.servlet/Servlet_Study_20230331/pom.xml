@@ -5,28 +5,40 @@
   <version>0.0.1</version>
   <packaging>war</packaging>
   <name>Servlet_Study_20230331</name>
+  
+  <properties>
+	  <m2eclipse.wtp.contextRopt>/</m2eclipse.wtp.contextRopt>
+  </properties>
+  
   <dependencies>
-  	<!-- https://mvnrepository.com/artifact/org.projectlombok/lombok -->
-	<dependency>
-		<groupId>org.projectlombok</groupId>
-		<artifactId>lombok</artifactId>
-		<version>1.18.24</version>
-		<scope>provided</scope>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/com.google.code.gson/gson -->
-	<dependency>
-		<groupId>com.google.code.gson</groupId>
-		<artifactId>gson</artifactId>
-		<version>2.10.1</version>
-	</dependency>
-	<!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
-	<dependency>
-	    <groupId>org.apache.tomcat</groupId>
-	    <artifactId>tomcat-jsp-api</artifactId>
-	    <version>9.0.73</version>
-	</dependency>
+    <dependency>
+       <groupId>org.projectlombok</groupId>
+       <artifactId>lombok</artifactId>
+       <version>1.18.24</version>
+       <scope>provided</scope>
+    </dependency>
+      
+    <dependency>
+       <groupId>com.google.code.gson</groupId>
+       <artifactId>gson</artifactId>
+       <version>2.10.1</version>
+   </dependency>
+   
+   <!-- https://mvnrepository.com/artifact/org.apache.tomcat/tomcat-jsp-api -->
+   <dependency>
+       <groupId>org.apache.tomcat</groupId>
+       <artifactId>tomcat-jsp-api</artifactId>
+       <version>9.0.73</version>
+   </dependency>
+   
+   <dependency>
+       <groupId>mysql</groupId>
+       <artifactId>mysql-connector-java</artifactId>
+       <version>8.0.32</version>
+   </dependency>
 
   </dependencies>
+  
   
   <build>
     <plugins>
@@ -34,7 +46,7 @@
         <artifactId>maven-compiler-plugin</artifactId>
         <version>3.8.1</version>
         <configuration>
-          <release>11</release> 
+          <release>11</release>
         </configuration>
       </plugin>
       <plugin>
