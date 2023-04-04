@@ -1,4 +1,4 @@
-package com.study.servlet.entity.repository;
+package com.study.servlet.repository;
 
 import com.study.servlet.entity.User;
 

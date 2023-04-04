@@ -13,8 +13,8 @@ import com.google.gson.Gson;
 import com.study.servlet.dto.RequestDto;
 import com.study.servlet.dto.ResponseDto;
 import com.study.servlet.entity.User;
-import com.study.servlet.entity.service.UserService;
-import com.study.servlet.entity.service.UserServiceImpl;
+import com.study.servlet.service.UserService;
+import com.study.servlet.service.UserServiceImpl;
 
 @WebServlet("/auth")
 public class Authentication extends HttpServlet {

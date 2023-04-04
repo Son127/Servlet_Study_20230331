@@ -1,4 +1,4 @@
-package com.study.servlet.entity.service;
+package com.study.servlet.service;
 
 import com.study.servlet.entity.User;
 
